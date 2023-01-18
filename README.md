@@ -9,7 +9,8 @@ Iterates over (folderPath) of .wav files, checks file name for kick/hat/snare (c
 
 # featurizer.js
 defines function: featurize(filePath, bands)
-Reads .wav (filePath) into buffer, converts to mono, performs FFT and returns freqData as an array of power values between 0 and 1 across the specified number of (bands).
+Reads .wav (filePath) into buffer, converts to mono, performs FFT via FFT.js and returns freqData as an array of power values between 0 and 1 across the specified number of (bands).
+FFT.js - https://github.com/indutny/fft.js/
 
 # featurizedArrayGenerator.js
 defines function: pathsTagsAndFeatures(folderPath, bands). 
