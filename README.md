@@ -25,5 +25,6 @@ defines class: linearModel{}
 
 
 # limitations and known problems.
--currently the featurizer bumps into memory limits when performing FFT on files above ~220kb. Dont use files above this size in training or tests sets.
+-currently the featurizer bumps into memory limits when performing FFT on files above ~220kb. Dont use files above this size in training or test 
+sets.
 -possibly problems when trying to read in files which contain unicode characters, inconsistent, unconfirmed.
