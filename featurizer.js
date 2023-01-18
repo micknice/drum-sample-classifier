@@ -6,6 +6,7 @@ const FFT = require('fft.js');
 const { OutgoingMessage } = require('http');
 
 function featurize(filePath, bandCount) {
+    
 
     // Read the WAV file into a buffer and parse
     const buf = fs.readFileSync(filePath);

@@ -5,7 +5,6 @@ const folderToArray = require('./folderToArraySync');
 const featurize = require('./featurizer');
 
 function pathsTagsAndFeatures(folderPath, bands) {
-
     const inputArray = folderToArray(folderPath);
     const filesWithFeatures = inputArray;
 
@@ -16,5 +15,8 @@ function pathsTagsAndFeatures(folderPath, bands) {
 }
 
 
-console.log(pathsTagsAndFeatures("C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment", 10))
+module.exports = pathsTagsAndFeatures;
+
+
+//console.log(pathsTagsAndFeatures("C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment", 10))
 

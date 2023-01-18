@@ -6,6 +6,7 @@ function vectorAverage(featurizedArray) {
     const freqData = 2;
     let vectorSum  = featurizedArray[0][freqData];
     
+    
     for (let i = 1; i < featurizedArray.length; i++) {
         for (let j = 0; j < vectorSum.length; j++) {
             vectorSum[j] += featurizedArray[i][freqData][j];
@@ -20,7 +21,7 @@ function vectorAverage(featurizedArray) {
 }
 
 
-module.export = vectorAverage;
+module.exports = vectorAverage;
 
 
 
