@@ -13,12 +13,12 @@ const freqData = 2;
 const bands = 48;
 
 //training sets
-const trainingSetKick = "C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment\\Kicks";
-const trainingSetSnare = "C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment\\Snares";
-const trainingSetHat = "C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment\\Hats";
+const trainingSetKick = ".\\data\\Kicks";
+const trainingSetSnare = ".\\data\\Snares";
+const trainingSetHat = ".\\data\\Hats";
 
 //test set
-const testSet = "C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment\\TestSet";
+const testSet = ".\\data\\TestSet";
 
 const testArray = featurizedArrayGenerator(testSet, bands);
 // console.log(testArray)
@@ -67,11 +67,7 @@ for (testSample in testArray) {
         } else if (testArray[testSample][1] !== 'Hat') { 
             incorrectlyClassified.push(testArray[testSample][0]);                      
         }   
-    } else {
-            
-    }
-
-
+    } 
 }
 console.log(correctlyClassified)
 console.log(testArray.length)
