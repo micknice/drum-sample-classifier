@@ -5,12 +5,12 @@ const { OutgoingMessage } = require('http');
 
 function featurize(filePath, bandCount) {
     
-
     // Read the WAV file into a buffer and parse
     const buf = fs.readFileSync(filePath);
     const wav = WavDecoder.decode.sync(buf);
 
     function wavToMonoArray(wavFile) {
+    
     // Convert the WAV file to mono
     const numChannels = wavFile.numberOfChannels;
     const samplesPerChannel = wavFile.channelData[0].length;
@@ -82,7 +82,6 @@ function featurize(filePath, bandCount) {
     for (let b = 0; b < numChunks; b++) {
     quantizedBands.push(absMean(realAbs.slice(b*chunkSize, (b+1) * chunkSize)));
     }
-
     return quantizedBands;
 }
 
