@@ -44,8 +44,6 @@ class linearModel {
     }
 }
 
-//model  = new linearModel();
-//console.log(model.dotProduct([], true));
 
 module.exports = linearModel;
 
