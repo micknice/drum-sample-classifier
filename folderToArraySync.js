@@ -15,11 +15,10 @@ function folderToArray(folderPathIn) {
             allFilePaths.push([`${folderPath}\\${allFilesInFolder[i]}`, 'Snare']);
         } else if (allFilesInFolder[i].toLowerCase().includes('hat')) {
             allFilePaths.push([`${folderPath}\\${allFilesInFolder[i]}`, 'Hat']);
-        }
-    
+        }    
     }
     return  allFilePaths;
 }
-//console.log(folderToArray("C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment"))
+
 
 module.exports = folderToArray;
