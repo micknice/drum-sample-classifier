@@ -1,5 +1,5 @@
-//folderToArray(folderpath) => returns array containing tuples of filepath/keyword pairs.
-//featurizer(filePath, bandCount) performs FFT and returns frequency data across teh specified no. of bands.
+//folderToArray(folderpath) => returns array of subarrays, each subarray containing filepath/keyword pairs.
+//featurizer(filePath, bandCount) performs FFT and returns frequency data across the specified no. of bands.
 
 const folderToArray = require('./folderToArraySync');
 const featurize = require('./featurizer');
@@ -13,7 +13,6 @@ function pathsTagsAndFeatures(folderPath, bands) {
     }
     return filesWithFeatures;
 }
-
 
 module.exports = pathsTagsAndFeatures;
 
