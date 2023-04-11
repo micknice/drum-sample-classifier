@@ -1,4 +1,4 @@
-//featurizedArrayGenerator(folderPath, bands) returns array of thruples containing filepath, class (Kick/Snare/Hat) and frequency data array 
+//featurizedArrayGenerator(folderPath, bands) returns array of subarrays, each subarray containing filepath, class (Kick/Snare/Hat) and frequency data array 
 featurizedArrayGenerator = require('./featurizedArrayGenerator');
 
 //vectorAverage(featurizedArray) pass output of featurizedArrayGenerator - returns class vector average
@@ -34,13 +34,6 @@ const modelHat = new linearModel();
 modelKick.m = vectorAverage(featurizedArrayGenerator(trainingSetKick, bands));
 modelSnare.m = vectorAverage(featurizedArrayGenerator(trainingSetSnare, bands));
 modelHat.m = vectorAverage(featurizedArrayGenerator(trainingSetHat, bands));
-
-//get dot products
-// dotKick = modelKick.dotProduct(testArray[0][2], true);
-// dotSnare = modelSnare.dotProduct(testArray[0][2], true);
-// dotHat = modelHat.dotProduct(testArray[0][2], true);
-
-
 
 // classify by linear model
 let correctlyClassified = 0;
