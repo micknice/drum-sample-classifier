@@ -5,7 +5,6 @@ const path = require('path');
 function folderToArray(folderPathIn) {
     const filesWithKeywords = [];
     const folderPath = folderPathIn
-
     const allFilesInFolder = fs.readdirSync(folderPath);
     const allFilePaths = [];
     for (let i = 0; i < allFilesInFolder.length; i++) {
