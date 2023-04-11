@@ -18,5 +18,4 @@ function pathsTagsAndFeatures(folderPath, bands) {
 module.exports = pathsTagsAndFeatures;
 
 
-//console.log(pathsTagsAndFeatures("C:\\Users\\NiceGuyMicky\\GIT REPOS\\wav-featurizer\\jaswavexperiment", 10))
 
