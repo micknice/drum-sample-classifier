@@ -1,5 +1,3 @@
-
-
 const fs = require('fs');
 const WavDecoder = require('wav-decoder');
 const FFT = require('fft.js');
