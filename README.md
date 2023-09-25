@@ -14,7 +14,7 @@ FFT.js - https://github.com/indutny/fft.js/
 
 # featurizedArrayGenerator.js
 defines function: pathsTagsAndFeatures(folderPath, bands). 
-consolidates the two above functions and returns a (featurizedArray) array of thruples containing [[filePath][tag][freqData]]
+consolidates the two above functions and returns a (featurizedArray) array of subarrays containing [[filePath][tag][freqData]]
 
 # vectorAverage.js
 defines function: vectorAverage(featurizedArray). 
